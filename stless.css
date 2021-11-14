@@ -1,0 +1,139 @@
+body {
+  background-color: #b0ebb4;
+  margin: 0;
+}
+
+/** GRID **/
+
+.grid-container {
+  background-color: #b0ebb4;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 700px;
+  border: 50px 20px 50px 20px;
+  padding: 10px;
+  grid-template-areas:
+    "header header header"
+    "GT BT ET"
+    "GT BT ET"
+    "GT BT ET"
+    "class class class"
+    "vinicius aspas guedes"
+    "vinicius aspas guedes";
+}
+
+.grid-container div {
+  background-color: cadetblue;
+  border: solid 3px #b0ebb4;
+  border: 50px 20px 50px 20px;
+  padding: 20px;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: GT;
+}
+
+.item3 {
+  grid-area: BT;
+}
+
+.item4 {
+  grid-area: ET;
+}
+
+.item5 {
+  grid-area: class;
+}
+
+.item6 {
+  grid-area: vinicius;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc inset;
+}
+
+.item6 .imagen {
+  position: relative;
+  background: #03a9f4;
+  opacity: 0.5;
+  box-shadow: 0 0 5px #ccc;
+  transition: 0.3s;
+}
+
+.item7 {
+  grid-area: aspas;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc inset;
+}
+
+.item7 .imagen {
+  position: relative;
+  background: #03a9f4;
+  opacity: 0.5;
+  box-shadow: 0 0 5px #ccc;
+  transition: 0.3s;
+}
+
+.item8 {
+  grid-area: guedes;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc inset;
+}
+
+.item8 .imagen {
+  position: relative;
+  background: #03a9f4;
+  opacity: 0.5;
+  box-shadow: 0 0 5px #ccc;
+  transition: 0.3s;
+}
+
+.scaleY:hover .imagen {
+  transform: scaleY(2);
+}
+
+.rotate:hover .imagen {
+  transform: rotate(45deg);
+}
+
+.skewY:hover .imagen {
+  transform: skewY(45deg);
+}
+
+img {
+  object-fit: cover; /** AJUSTA LA IMAGEN PARA QUE NO SE DISTORSIONE **/
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  text-align: center;
+  background-color: #b0ebb4;
+}
+
+nav {
+  background-color: #d9ed92;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+nav a {
+  padding: 50px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+}
+
+.anchor-hover:hover {
+  background-color: goldenrod;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
